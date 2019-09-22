@@ -4,19 +4,23 @@ body{
 
 header #socialMediaIcons{
     background-color: #686868;
-    color: white;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
 }
 
-header #socialMediaIcons i{
+header #socialMediaIcons a{
+    color: white;
+}
+
+header #socialMediaIcons a{
     padding: 7px 20px;
 }
 
-header #socialMediaIcons i:hover{
+header #socialMediaIcons a:hover{
     opacity: 0.7;
+    text-decoration: none;
 }
 
 header .navbar{
@@ -32,7 +36,7 @@ header .navbar .navbar-brand{
     padding: 0 10px 0 70px;
 }
 header .navbar .navbar-brand img{
-    width: 150px;
+    width: 250px;
 }
 header .navbar .nav-item{
     background-color: white;
