@@ -1,99 +1,51 @@
-body{
-    padding-top: 110px;
-    background-image: url("Images/mountains.jpg");
-    background-size: cover;
-    background-repeat: repeat;
-    z-index:2;
-    position: absolute;
-    top: 0;
-    left:0;
-    min-width: 100%;
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    5% {
+        transform: scale(1.05);
+    }
+    15% {
+        transform: scale(1);
+    }
 }
 
-header #socialMediaIcons{
-    background-color: #686868;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+body {
+    cursor: default;
+    background-image: url("images/waves.jpg");
 }
 
-header #socialMediaIcons a{
-    color: white;
+#header {
+    opacity: 0.9;
+    backdrop-filter: blur(12px);
 }
 
-header #socialMediaIcons a{
-    padding: 7px 20px;
-}
-
-header #socialMediaIcons a:hover{
-    opacity: 0.7;
-    text-decoration: none;
-}
-
-header .navbar{
-    top: 30px;
-    font-size: 16px;
-    background-color: white;
-    height: 80px;
-    box-shadow: 0 4px 2px -2px rgba(0,0,0,0.1);
-    text-align: center;
-    padding: 0;
-}
-header .navbar .navbar-brand{
-    padding: 0 10px 0 0;
-}
-header .navbar .navbar-brand img{
-    width: 250px;
-}
-header .navbar .nav-item{
-    background-color: white;
-}
-header .navbar .nav-link{
-    margin: 20px 15px;
-}
-
-
-header .navbar .navbar-toggler{
-    border:none;
-    margin: 10px;
-}
-header .navbar .navbar-toggler-icon{
-    padding: 20px;
-}
-header .navbar .show{
-    box-shadow: 0 10px 5px -5px rgba(0,0,0,0.1);
-}
-
-header .cursor:hover{
-    cursor: pointer;
-}
-
-main{
-    font-family: 'Merriweather', serif;
-}
-
-main .imgWrapper{
-    width: 75%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    display: flex;
-    background-color: rgba(255,255,255,0.6);
-    justify-content: center;
-    align-items: center;
-}
-
-main .imgWrapper img{
-    width:80%;
-    padding: 10% 0;
-}
-
-main .titleWrap{
-    justify-content: center;
-    padding: 20px 0;
-}
-
-main .titleWrap span{
+h1 {
+    font-size: 60px;
     font-weight: bold;
-    font-size: 6vw;
-    color: #383838;
+    animation: pulse 10s infinite;
+}
+
+#subtitle {
+    font-size: 20px;
+    color: #dbfff4;
+    animation: pulse 3s infinite;
+}
+
+back {
+    position: fixed;
+    height: 100vh;
+}
+
+#break {
+    background-color: #13afe8;
+    min-height: 20px;
+}
+
+i {
+    font-size: 50px;
+}
+
+i:hover {
+    font-size: 53px;
 }
